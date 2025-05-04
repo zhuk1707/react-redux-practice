@@ -1,4 +1,3 @@
-import './index.css'
 import App from './App.tsx'
 import store from './store/store.ts'
 import {StrictMode} from 'react'

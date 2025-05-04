@@ -5,10 +5,15 @@ import Counter from './components/Counter';
 
 function App() {
   return (
-    <>
-      <Todos/>
-      <Counter/>
-    </>
+    <div className='container'>
+        <div className="layout">
+          <Todos todosTitle={'All TODO'}/>
+          <Todos todosTitle={'Now'}/>
+          <Todos todosTitle={'Today'}/>
+          <Counter/>
+        </div>
+
+    </div>
   )
 }
 

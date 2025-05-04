@@ -1,10 +1,10 @@
 import {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
-import {addTodo, removeTodo} from "../../actions/actions.ts";
+import {addTodo, removeTodo} from "../../actions";
 import styles from "./Todos.module.css";
 
 
-const Todos = () => {
+const Todos = ({todosTitle = "TODO"}) => {
   const todos = useSelector((state: any) => state.todos);
   const dispatch = useDispatch();
   const [task, setTask] = useState("");
@@ -18,7 +18,7 @@ const Todos = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Список задач</h2>
+      <h2>{todosTitle}</h2>
       <input
         className={styles.input}
         type="text"
