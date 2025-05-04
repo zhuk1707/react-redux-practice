@@ -1,11 +1,15 @@
+import {INCREMENT, DECREMENT, RESET} from "../../store/actions.ts";
+
 const initialState = {count: 0};
 
 const counterReducer = (state = initialState, action: any) => {
   switch (action.type) {
-    case "INCREMENT":
+    case INCREMENT:
       return {...state, count: state.count + 1};
-    case "DECREMENT":
+    case DECREMENT:
       return {...state, count: state.count - 1};
+    case RESET:
+      return {...state, count: 0};
     default:
       return state;
   }
