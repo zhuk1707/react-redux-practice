@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT, RESET} from "../../store/actions.ts";
+import {INCREMENT, DECREMENT, RESET} from "../../actions";
 
 const initialState = {count: 0};
 

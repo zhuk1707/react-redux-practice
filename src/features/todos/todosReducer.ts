@@ -1,4 +1,4 @@
-import {ADD_TODO, REMOVE_TODO} from "../../store/actions.ts";
+import {ADD_TODO, REMOVE_TODO} from "../../actions";
 
 const initialTodos: any[] = [];
 

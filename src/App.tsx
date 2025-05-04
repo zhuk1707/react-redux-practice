@@ -1,6 +1,6 @@
 import './App.css'
-import Counter from "./components/Counter/Counter.tsx";
-import Todos from "./components/Todos/Todos.tsx";
+import Todos from "./components/Todos";
+import Counter from './components/Counter';
 
 
 function App() {
